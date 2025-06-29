@@ -14,7 +14,7 @@
 
   - name: start & enable mongodb service
     ansible.builtin.service:
-      name: mongdb run
+      name: mongdb
       state: started
       enabled: yes
 
