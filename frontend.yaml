@@ -11,7 +11,7 @@
 
   - name: install nginx
     ansible.builtin.dnf:
-      name: install nginx
+      name: nginx
       state: present
 
   - name: enable and start nginx
