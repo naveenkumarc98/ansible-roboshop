@@ -15,7 +15,7 @@
   - name: start & enable mongodb service
     ansible.builtin.service:
       name: mongdb run
-      state: present
+      state: started
       enabled: yes
 
   - name: replace the adress
