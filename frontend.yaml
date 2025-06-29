@@ -16,7 +16,7 @@
 
   - name: enable and start nginx
     ansible.builtin.service:
-      name: nginx run
+      name: nginx
       state: started
       enabled: yes
 
@@ -35,7 +35,7 @@
       url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
       dest: /tmp/frontend.zip
 
-  - name: unarchieve the zip code
+  - name: unzip frontend code
     ansible.builtin.unarchieve:
       src: /tmp/frontend.zip
       dest: /usr/share/nginx/html
